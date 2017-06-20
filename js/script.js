@@ -1,22 +1,3 @@
-$("#unitSizeButton").on("click", function() {
-  if ($("input[name=totalfield]").val() <= 200) {
-    $("#unitSize").val("5x5");
-  } else if ($("input[name=totalfield]").val() <= 400 && $("input[name=totalfield]").val() > 200) {
-    $("#unitSize").val("5x10");
-  }  else if ($("input[name=totalfield]").val() <= 800 && $("input[name=totalfield]").val() > 400) {
-    $("#unitSize").val("10x10");
-  } else if ($("input[name=totalfield]").val() <= 1200 && $("input[name=totalfield]").val() > 800) {
-    $("#unitSize").val("10x15");
-  } else if ($("input[name=totalfield]").val() <= 1600 && $("input[name=totalfield]").val() > 1200) {
-    $("#unitSize").val("10x20");
-  } else if ($("input[name=totalfield]").val() <= 2000 && $("input[name=totalfield]").val() > 1600) {
-    $("#unitSize").val("10x25");
-   } else {
-     $("#result").html("<p>Wow, that's a lot of stuff! You'll likely need two storage units. Give us a call and we'll be glad to help you figure out your storage needs</p> <a href='tel:3194667491'>Call: 319.466.7491</a>");
-   }
-  
-});
-
 function addUp(form) {
 var LR_bookcaseV;
 LR_bookcaseV =parseInt(document.spacecalc1.LR_bookcase.value);
@@ -602,7 +583,3 @@ newTot = Math.round(newTot);
 
 }
  
-   
-
-
-
