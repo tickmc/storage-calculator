@@ -1,3 +1,7 @@
+
+
+
+
 function addUp(form) {
 var LR_bookcaseV;
 LR_bookcaseV =parseInt(document.spacecalc1.LR_bookcase.value);
@@ -557,5 +561,32 @@ newTot = (LR_bookcaseV * 20) + (APP_aircondV * 20) + (MISC_baby_carriageV *
 newTot = newTot * 1.15;
 
 newTot = Math.round(newTot);
+  
+  
+ 
+   if (newTot <= 200) {
+    newTot = "5 x 5";
+   
+  } else if (newTot <=400 && newTot > 200) {
+    newTot = "5 x 10";
+  } else if (newTot <=800 && newTot > 400) {
+    newTot = "10 x 10";
+  } else if (newTot <=1200 && newTot > 800) {
+    newTot = "10 x 15";
+  } else if (newTot <=1600 && newTot > 1200) {
+    newTot = "10 x 20";
+  } else if (newTot <=2000 && newTot > 1600) {
+    newTot = "10 x 25";
+  };
+
+   
  document.spacecalc1.totalfield.value = newTot;
+  
+  
+  
+
 }
+ 
+   
+
+
